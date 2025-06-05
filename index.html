@@ -2,51 +2,133 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Primera Página</title>
+  <title>Tienda de Bienestar Mental</title>
   <style>
     body {
-      background: linear-gradient(to right, #fce4ec, #f8bbd0);
+      margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #4b2e83;
+    }
+
+    header {
+      background-color: #f8c8dc;
+      padding: 30px;
       text-align: center;
-      padding: 40px;
-      color: #880e4f;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #a83279;
     }
-    img {
-      width: 180px;
-      border-radius: 50%;
-      margin-top: 20px;
-      border: 4px solid #ec407a;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    .banner img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
     }
-    .info {
-      margin-top: 30px;
-      background-color: #ffffffcc;
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .producto {
+      background-color: #fff;
+      border-radius: 15px;
+      width: 250px;
       padding: 20px;
-      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .producto h3 {
+      margin: 15px 0 10px;
+      color: #c94f7c;
+    }
+
+    .producto p {
+      font-size: 0.95em;
+      color: #5a2b51;
+    }
+
+    .boton {
       display: inline-block;
+      margin-top: 15px;
+      background-color: #a83279;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    h2 {
-      color: #ad1457;
+
+    .boton:hover {
+      background-color: #87225d;
     }
-    p {
-      font-size: 1.2em;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8c8dc;
+      color: #5a2b51;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>¡Hola, soy Niurka!</h1>
 
-  <img src="https://i.imgur.com/Qn6Wfxz.png" alt="Foto de Niurka">
+  <header>
+    <h1>Tienda Bienestar Femenino</h1>
+    <p>Cuidar tu mente es el primer paso para brillar</p>
+  </header>
 
-  <div class="info">
-    <h2>Sobre mí</h2>
-    <p>🎓 Estudio Negocios Internacionales en la Universidad Internacional del Ecuador.</p>
-    <p>💼 Me interesa el comercio exterior, la innovación y el diseño creativo.</p>
-    <p>🌟 Esta página es el comienzo de muchas ideas geniales.</p>
+  <div class="banner">
+    <img src="saludmental.png" alt="Banner bienestar mental">
   </div>
+
+  <div class="productos">
+    <div class="producto">
+      <img src="https://i.imgur.com/1Q9Z1Zm.jpg" alt="Terapias">
+      <h3>Guía de autocuidado</h3>
+      <p>Descubre tips diarios para tu salud mental y emocional.</p>
+      <a href="#" class="boton">Ver más</a>
+    </div>
+    <div class="producto">
+      <img src="https://i.imgur.com/fJkK8Mx.jpg" alt="Meditación">
+      <h3>Meditaciones guiadas</h3>
+      <p>Audios para relajarte y conectar contigo misma.</p>
+      <a href="#" class="boton">Escuchar</a>
+    </div>
+    <div class="producto">
+      <img src="https://i.imgur.com/tAHfCoo.jpg" alt="Productos">
+      <h3>Kit de bienestar</h3>
+      <p>Incluye vela, cuaderno y afirmaciones positivas.</p>
+      <a href="#" class="boton">Comprar</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Bienestar Mental - Hecho con amor para mujeres valientes 💖
+  </footer>
+
 </body>
 </html>
