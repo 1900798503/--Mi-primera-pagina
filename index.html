@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Niurka | Página de Inicio</title>
+  <title>Niurka | Bienestar Mental</title>
   <style>
     body {
       margin: 0;
@@ -19,89 +19,114 @@
       font-weight: bold;
     }
 
-    .container {
+    nav {
+      background-color: #f48fb1;
       display: flex;
-      flex-direction: row;
-      height: 90vh;
-    }
-
-    .contenido {
-      width: 60%;
-      padding: 40px;
-      display: flex;
-      align-items: center;
       justify-content: center;
-      font-size: 1.5em;
+      gap: 40px;
+      padding: 10px 0;
     }
 
-    .imagen-derecha {
-      width: 40%;
-      background-image: url('fondo.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
-</head>
-<body>
-  <header>Bienvenida a la página de Niurka</header>
-  <div class="container">
-    <div class="contenido">
-      <p>¡Gracias por visitar mi sitio!</p>
-    </div>
-    <div class="imagen-derecha"></div>
-  </div>
-</body>
-</html><!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Niurka | Página de Inicio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fce4ec;
-      color: #4a148c;
-    }
-
-    header {
-      background-color: #f8bbd0;
-      padding: 20px;
-      text-align: center;
-      font-size: 2em;
+    nav a {
+      color: white;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    .container {
+    .hero {
       display: flex;
-      flex-direction: row;
-      height: 90vh;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      background-color: #fff0f5;
     }
 
-    .contenido {
+    .hero-text {
       width: 60%;
-      padding: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-size: 1.5em;
     }
 
-    .imagen-derecha {
-      width: 40%;
+    .hero-img {
+      width: 35%;
+      height: 300px;
       background-image: url('fondo.jpg');
       background-size: cover;
       background-position: center;
+      border-radius: 20px;
+    }
+
+    .productos {
+      padding: 40px;
+      background-color: #fce4ec;
+    }
+
+    .productos h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .producto-lista {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .producto {
+      background-color: white;
+      padding: 20px;
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #d81b60;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f8bbd0;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>Bienvenida a la página de Niurka</header>
-  <div class="container">
-    <div class="contenido">
-      <p>¡Gracias por visitar mi sitio!</p>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Tu espacio de bienestar y equilibrio</h2>
+      <p>Explora herramientas que te ayuden a mejorar tu salud mental y emocional. Este es un lugar pensado con amor para ti.</p>
     </div>
-    <div class="imagen-derecha"></div>
-  </div>
+    <div class="hero-img"></div>
+  </section>
+
+  <section class="productos">
+    <h2>Productos destacados</h2>
+    <div class="producto-lista">
+      <div class="producto">
+        <h3>Guía de Meditación</h3>
+        <p>$5.00</p>
+      </div>
+      <div class="producto">
+        <h3>Velas Aromáticas</h3>
+        <p>$8.50</p>
+      </div>
+      <div class="producto">
+        <h3>Sesión Virtual</h3>
+        <p>$15.00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Página creada por Niurka 💖
+  </footer>
 </body>
 </html>
